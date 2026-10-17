@@ -40,7 +40,7 @@ Assumptions: adjacency lists, binary heap, E ≤ V² (so log E = O(log V)), α =
 - **Sizes:** Small V=10, E=30; Medium V=100, E=500; Large V=1000, E=5000. Extra experiments: V from 250 to 16000 with E = 5V, and V = 1000 with E from 1000 to 100000.
 - **Graphs (fixed seed 42, weights 1–100, no self-loops, no duplicate edges):** undirected connected graph = random spanning tree plus random extra edges (always connected); directed graph with cycles = random distinct directed edges (the benchmark confirms that it has cycles); DAG = all edges go from an earlier to a later vertex in a hidden random order (no cycles).
 - **Measurement:** graphs are generated before timing. Warm-up runs (so the JVM compiles the code), then 5 repetitions with `System.nanoTime()`, each repetition is a short batch divided by its size. The result is the average of the 5 repetitions, in microseconds (µs). Operation counts are exact.
-- **Machine:** [write your CPU / RAM / OS / JDK version here]. Absolute times depend on the machine, operation counts do not.
+- **Machine:** MacBook Air (Apple M4, 2025), 16 GB RAM, macOS 15.5, OpenJDK 25.0.1 (Temurin). Absolute times depend on the machine, operation counts do not.
 
 ## 5. Results
 Average time per run in µs (all graphs in `results/tables/`):
