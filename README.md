@@ -4,10 +4,6 @@ Java implementation and experimental analysis of the graph algorithms required b
 **DSU**, **Kruskal**, **Prim**, **topological ordering (Kahn)**, **strongly connected components (Tarjan)** and **Dijkstra**.
 No external libraries are used (the test suite is self-contained, the plots are drawn by a small Python script).
 
-**Contents:** [Overview](#1-overview) · [Implementation](#2-implementation) · [Complexity Analysis](#3-complexity-analysis) · [Experimental Setup](#4-experimental-setup) · [Results](#5-results) · [Comparison and Discussion](#6-comparison-and-discussion) · [Testing](#7-testing) · [Conclusion](#8-conclusion) · [How to run](#9-how-to-build-and-run)
-
----
-
 ## 1. Overview
 
 A city is modelled as a graph:
