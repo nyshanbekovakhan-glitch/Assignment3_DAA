@@ -1,0 +1,157 @@
+experiment,graph,V,E,algorithm,graph_type,avg_time_us,mst_weight,edge_exams,comparisons,dsu_finds,dsu_unions,dsu_parent_steps,pq_pushes,pq_pops_or_visits,relaxations,info
+required,Small,10,30,Kruskal,undirected connected,0.38,102,13,112,26,13,14,0,0,0,components=1;edges=9
+required,Small,10,30,Prim,undirected connected,0.63,102,60,130,0,0,0,30,13,0,components=1;edges=9
+required,Small,10,30,TopoSort (Kahn),DAG,0.16,,60,0,0,0,0,0,10,0,isDag=true;validOrder=true;ordered=10
+required,Small,10,30,TopoSort (Kahn),directed cyclic,0.03,,30,0,0,0,0,0,0,0,isDag=false;ordered=0;unordered=10
+required,Small,10,30,SCC (Tarjan),directed cyclic,0.38,,30,0,0,0,0,0,10,0,sccs=1;largest=10
+required,Small,10,30,SCC (Tarjan),DAG,0.40,,30,0,0,0,0,0,10,0,sccs=10;largest=1
+required,Small,10,30,Dijkstra,undirected connected,0.42,,60,64,0,0,0,15,15,14,reachable=10/10;maxDist=67
+required,Small,10,30,Dijkstra,directed random,0.22,,30,22,0,0,0,10,10,9,reachable=10/10;maxDist=121
+required,Medium,100,500,Kruskal,undirected connected,12.85,1210,305,3841,610,305,557,0,0,0,components=1;edges=99
+required,Medium,100,500,Prim,undirected connected,16.98,1210,1000,5734,0,0,0,500,305,0,components=1;edges=99
+required,Medium,100,500,TopoSort (Kahn),DAG,1.84,,1000,0,0,0,0,0,100,0,isDag=true;validOrder=true;ordered=100
+required,Medium,100,500,TopoSort (Kahn),directed cyclic,0.41,,500,0,0,0,0,0,0,0,isDag=false;ordered=0;unordered=100
+required,Medium,100,500,SCC (Tarjan),directed cyclic,5.66,,500,0,0,0,0,0,100,0,sccs=3;largest=98
+required,Medium,100,500,SCC (Tarjan),DAG,4.77,,500,0,0,0,0,0,100,0,sccs=100;largest=1
+required,Medium,100,500,Dijkstra,undirected connected,9.40,,1000,2599,0,0,0,215,215,214,reachable=100/100;maxDist=105
+required,Medium,100,500,Dijkstra,directed random,5.39,,500,1471,0,0,0,146,146,145,reachable=100/100;maxDist=188
+required,Large,1000,5000,Kruskal,undirected connected,363.05,12120,2868,50421,5736,2868,5240,0,0,0,components=1;edges=999
+required,Large,1000,5000,Prim,undirected connected,476.40,12120,10000,75048,0,0,0,5000,2886,0,components=1;edges=999
+required,Large,1000,5000,TopoSort (Kahn),DAG,24.60,,10000,0,0,0,0,0,1000,0,isDag=true;validOrder=true;ordered=1000
+required,Large,1000,5000,TopoSort (Kahn),directed cyclic,4.47,,5039,0,0,0,0,0,7,0,isDag=false;ordered=7;unordered=993
+required,Large,1000,5000,SCC (Tarjan),directed cyclic,93.31,,5000,0,0,0,0,0,1000,0,sccs=15;largest=986
+required,Large,1000,5000,SCC (Tarjan),DAG,57.31,,5000,0,0,0,0,0,1000,0,sccs=1000;largest=1
+required,Large,1000,5000,Dijkstra,undirected connected,271.51,,10000,36441,0,0,0,1978,1978,1977,reachable=1000/1000;maxDist=166
+required,Large,1000,5000,Dijkstra,directed random,157.66,,4961,23848,0,0,0,1426,1426,1425,reachable=993/1000;maxDist=301
+vertex_sweep,V250,250,1250,Kruskal,undirected connected,43.60,2893,847,11310,1694,847,1558,0,0,0,components=1;edges=249
+vertex_sweep,V250,250,1250,Prim,undirected connected,75.34,2893,2500,17725,0,0,0,1250,845,0,components=1;edges=249
+vertex_sweep,V250,250,1250,TopoSort (Kahn),DAG,5.28,,2500,0,0,0,0,0,250,0,isDag=true;validOrder=true;ordered=250
+vertex_sweep,V250,250,1250,TopoSort (Kahn),directed cyclic,1.08,,1258,0,0,0,0,0,2,0,isDag=false;ordered=2;unordered=248
+vertex_sweep,V250,250,1250,SCC (Tarjan),directed cyclic,16.71,,1250,0,0,0,0,0,250,0,sccs=6;largest=245
+vertex_sweep,V250,250,1250,SCC (Tarjan),DAG,12.90,,1250,0,0,0,0,0,250,0,sccs=250;largest=1
+vertex_sweep,V250,250,1250,Dijkstra,undirected connected,26.32,,2500,7559,0,0,0,513,513,512,reachable=250/250;maxDist=143
+vertex_sweep,V250,250,1250,Dijkstra,directed random,15.72,,1242,4333,0,0,0,347,347,346,reachable=248/250;maxDist=236
+vertex_sweep,V500,500,2500,Kruskal,undirected connected,153.92,6144,1623,24195,3246,1623,2975,0,0,0,components=1;edges=499
+vertex_sweep,V500,500,2500,Prim,undirected connected,211.87,6144,5000,37524,0,0,0,2500,1614,0,components=1;edges=499
+vertex_sweep,V500,500,2500,TopoSort (Kahn),DAG,11.70,,5000,0,0,0,0,0,500,0,isDag=true;validOrder=true;ordered=500
+vertex_sweep,V500,500,2500,TopoSort (Kahn),directed cyclic,2.44,,2533,0,0,0,0,0,6,0,isDag=false;ordered=6;unordered=494
+vertex_sweep,V500,500,2500,SCC (Tarjan),directed cyclic,35.19,,2500,0,0,0,0,0,500,0,sccs=9;largest=492
+vertex_sweep,V500,500,2500,SCC (Tarjan),DAG,27.31,,2500,0,0,0,0,0,500,0,sccs=500;largest=1
+vertex_sweep,V500,500,2500,Dijkstra,undirected connected,92.03,,5000,16403,0,0,0,998,998,997,reachable=500/500;maxDist=155
+vertex_sweep,V500,500,2500,Dijkstra,directed random,43.03,,2467,10757,0,0,0,728,728,727,reachable=494/500;maxDist=338
+vertex_sweep,V1000,1000,5000,Kruskal,undirected connected,361.96,12120,2868,50421,5736,2868,5240,0,0,0,components=1;edges=999
+vertex_sweep,V1000,1000,5000,Prim,undirected connected,469.17,12120,10000,75048,0,0,0,5000,2886,0,components=1;edges=999
+vertex_sweep,V1000,1000,5000,TopoSort (Kahn),DAG,24.32,,10000,0,0,0,0,0,1000,0,isDag=true;validOrder=true;ordered=1000
+vertex_sweep,V1000,1000,5000,TopoSort (Kahn),directed cyclic,4.52,,5039,0,0,0,0,0,7,0,isDag=false;ordered=7;unordered=993
+vertex_sweep,V1000,1000,5000,SCC (Tarjan),directed cyclic,92.73,,5000,0,0,0,0,0,1000,0,sccs=15;largest=986
+vertex_sweep,V1000,1000,5000,SCC (Tarjan),DAG,57.70,,5000,0,0,0,0,0,1000,0,sccs=1000;largest=1
+vertex_sweep,V1000,1000,5000,Dijkstra,undirected connected,272.90,,10000,36441,0,0,0,1978,1978,1977,reachable=1000/1000;maxDist=166
+vertex_sweep,V1000,1000,5000,Dijkstra,directed random,158.37,,4961,23848,0,0,0,1426,1426,1425,reachable=993/1000;maxDist=301
+vertex_sweep,V2000,2000,10000,Kruskal,undirected connected,830.74,25091,7185,103176,14370,7185,13360,0,0,0,components=1;edges=1999
+vertex_sweep,V2000,2000,10000,Prim,undirected connected,1242.26,25091,20000,192752,0,0,0,10000,7180,0,components=1;edges=1999
+vertex_sweep,V2000,2000,10000,TopoSort (Kahn),DAG,66.42,,20000,0,0,0,0,0,2000,0,isDag=true;validOrder=true;ordered=2000
+vertex_sweep,V2000,2000,10000,TopoSort (Kahn),directed cyclic,9.43,,10069,0,0,0,0,0,12,0,isDag=false;ordered=12;unordered=1988
+vertex_sweep,V2000,2000,10000,SCC (Tarjan),directed cyclic,265.98,,10000,0,0,0,0,0,2000,0,sccs=35;largest=1966
+vertex_sweep,V2000,2000,10000,SCC (Tarjan),DAG,142.09,,10000,0,0,0,0,0,2000,0,sccs=2000;largest=1
+vertex_sweep,V2000,2000,10000,Dijkstra,undirected connected,638.69,,20000,79697,0,0,0,3917,3917,3916,reachable=2000/2000;maxDist=178
+vertex_sweep,V2000,2000,10000,Dijkstra,directed random,399.93,,9931,53187,0,0,0,2840,2840,2839,reachable=1988/2000;maxDist=308
+vertex_sweep,V4000,4000,20000,Kruskal,undirected connected,1644.28,49660,16673,209068,33346,16673,31430,0,0,0,components=1;edges=3999
+vertex_sweep,V4000,4000,20000,Prim,undirected connected,2988.58,49660,40000,468327,0,0,0,20000,16719,0,components=1;edges=3999
+vertex_sweep,V4000,4000,20000,TopoSort (Kahn),DAG,189.51,,40000,0,0,0,0,0,4000,0,isDag=true;validOrder=true;ordered=4000
+vertex_sweep,V4000,4000,20000,TopoSort (Kahn),directed cyclic,18.67,,20149,0,0,0,0,0,33,0,isDag=false;ordered=33;unordered=3967
+vertex_sweep,V4000,4000,20000,SCC (Tarjan),directed cyclic,629.92,,20000,0,0,0,0,0,4000,0,sccs=68;largest=3933
+vertex_sweep,V4000,4000,20000,SCC (Tarjan),DAG,339.30,,20000,0,0,0,0,0,4000,0,sccs=4000;largest=1
+vertex_sweep,V4000,4000,20000,Dijkstra,undirected connected,1435.13,,40000,174737,0,0,0,7819,7819,7818,reachable=4000/4000;maxDist=174
+vertex_sweep,V4000,4000,20000,Dijkstra,directed random,939.88,,19851,118885,0,0,0,5761,5761,5760,reachable=3967/4000;maxDist=363
+vertex_sweep,V8000,8000,40000,Kruskal,undirected connected,3450.05,99719,38247,421347,76494,38247,72959,0,0,0,components=1;edges=7999
+vertex_sweep,V8000,8000,40000,Prim,undirected connected,7609.58,99719,80000,1112011,0,0,0,40000,38160,0,components=1;edges=7999
+vertex_sweep,V8000,8000,40000,TopoSort (Kahn),DAG,470.80,,80000,0,0,0,0,0,8000,0,isDag=true;validOrder=true;ordered=8000
+vertex_sweep,V8000,8000,40000,TopoSort (Kahn),directed cyclic,37.36,,40323,0,0,0,0,0,63,0,isDag=false;ordered=63;unordered=7937
+vertex_sweep,V8000,8000,40000,SCC (Tarjan),directed cyclic,1682.85,,40000,0,0,0,0,0,8000,0,sccs=133;largest=7868
+vertex_sweep,V8000,8000,40000,SCC (Tarjan),DAG,935.17,,40000,0,0,0,0,0,8000,0,sccs=8000;largest=1
+vertex_sweep,V8000,8000,40000,Dijkstra,undirected connected,3488.93,,80000,382624,0,0,0,15721,15721,15720,reachable=8000/8000;maxDist=184
+vertex_sweep,V8000,8000,40000,Dijkstra,directed random,2209.55,,39677,258691,0,0,0,11426,11426,11425,reachable=7937/8000;maxDist=427
+vertex_sweep,V16000,16000,80000,Kruskal,undirected connected,7115.75,201883,71933,846080,143866,71933,136481,0,0,0,components=1;edges=15999
+vertex_sweep,V16000,16000,80000,Prim,undirected connected,17300.28,201883,160000,2302330,0,0,0,80000,72626,0,components=1;edges=15999
+vertex_sweep,V16000,16000,80000,TopoSort (Kahn),DAG,1321.23,,160000,0,0,0,0,0,16000,0,isDag=true;validOrder=true;ordered=16000
+vertex_sweep,V16000,16000,80000,TopoSort (Kahn),directed cyclic,96.35,,80611,0,0,0,0,0,119,0,isDag=false;ordered=119;unordered=15881
+vertex_sweep,V16000,16000,80000,SCC (Tarjan),directed cyclic,4389.28,,80000,0,0,0,0,0,16000,0,sccs=222;largest=15779
+vertex_sweep,V16000,16000,80000,SCC (Tarjan),DAG,2527.58,,80000,0,0,0,0,0,16000,0,sccs=16000;largest=1
+vertex_sweep,V16000,16000,80000,Dijkstra,undirected connected,7921.57,,160000,821973,0,0,0,31227,31227,31226,reachable=16000/16000;maxDist=213
+vertex_sweep,V16000,16000,80000,Dijkstra,directed random,5406.96,,79389,567038,0,0,0,22982,22982,22981,reachable=15881/16000;maxDist=444
+edge_sweep,E1000,1000,1000,Kruskal,undirected connected,39.22,50425,1000,8641,2000,1000,1260,0,0,0,components=1;edges=999
+edge_sweep,E1000,1000,1000,Prim,undirected connected,55.51,50425,2000,13107,0,0,0,1000,1000,0,components=1;edges=999
+edge_sweep,E1000,1000,1000,TopoSort (Kahn),DAG,13.05,,2000,0,0,0,0,0,1000,0,isDag=true;validOrder=true;ordered=1000
+edge_sweep,E1000,1000,1000,TopoSort (Kahn),directed cyclic,10.72,,1802,0,0,0,0,0,818,0,isDag=false;ordered=818;unordered=182
+edge_sweep,E1000,1000,1000,SCC (Tarjan),directed cyclic,37.79,,1000,0,0,0,0,0,1000,0,sccs=975;largest=24
+edge_sweep,E1000,1000,1000,SCC (Tarjan),DAG,31.53,,1000,0,0,0,0,0,1000,0,sccs=1000;largest=1
+edge_sweep,E1000,1000,1000,Dijkstra,undirected connected,55.16,,2000,11708,0,0,0,1001,1001,1000,reachable=1000/1000;maxDist=1245
+edge_sweep,E1000,1000,1000,Dijkstra,directed random,0.89,,15,8,0,0,0,16,16,15,reachable=16/1000;maxDist=663
+edge_sweep,E2000,1000,2000,Kruskal,undirected connected,134.41,28102,1934,18946,3868,1934,3388,0,0,0,components=1;edges=999
+edge_sweep,E2000,1000,2000,Prim,undirected connected,230.02,28102,4000,39047,0,0,0,2000,1937,0,components=1;edges=999
+edge_sweep,E2000,1000,2000,TopoSort (Kahn),DAG,15.39,,4000,0,0,0,0,0,1000,0,isDag=true;validOrder=true;ordered=1000
+edge_sweep,E2000,1000,2000,TopoSort (Kahn),directed cyclic,4.47,,2315,0,0,0,0,0,162,0,isDag=false;ordered=162;unordered=838
+edge_sweep,E2000,1000,2000,SCC (Tarjan),directed cyclic,54.97,,2000,0,0,0,0,0,1000,0,sccs=304;largest=697
+edge_sweep,E2000,1000,2000,SCC (Tarjan),DAG,37.66,,2000,0,0,0,0,0,1000,0,sccs=1000;largest=1
+edge_sweep,E2000,1000,2000,Dijkstra,undirected connected,126.65,,4000,20623,0,0,0,1287,1287,1286,reachable=1000/1000;maxDist=323
+edge_sweep,E2000,1000,2000,Dijkstra,directed random,46.96,,1686,11017,0,0,0,884,884,883,reachable=839/1000;maxDist=995
+edge_sweep,E5000,1000,5000,Kruskal,undirected connected,385.20,12120,2868,50421,5736,2868,5240,0,0,0,components=1;edges=999
+edge_sweep,E5000,1000,5000,Prim,undirected connected,502.64,12120,10000,75048,0,0,0,5000,2886,0,components=1;edges=999
+edge_sweep,E5000,1000,5000,TopoSort (Kahn),DAG,24.46,,10000,0,0,0,0,0,1000,0,isDag=true;validOrder=true;ordered=1000
+edge_sweep,E5000,1000,5000,TopoSort (Kahn),directed cyclic,4.81,,5039,0,0,0,0,0,7,0,isDag=false;ordered=7;unordered=993
+edge_sweep,E5000,1000,5000,SCC (Tarjan),directed cyclic,91.97,,5000,0,0,0,0,0,1000,0,sccs=15;largest=986
+edge_sweep,E5000,1000,5000,SCC (Tarjan),DAG,59.48,,5000,0,0,0,0,0,1000,0,sccs=1000;largest=1
+edge_sweep,E5000,1000,5000,Dijkstra,undirected connected,272.64,,10000,36441,0,0,0,1978,1978,1977,reachable=1000/1000;maxDist=166
+edge_sweep,E5000,1000,5000,Dijkstra,directed random,157.70,,4961,23848,0,0,0,1426,1426,1425,reachable=993/1000;maxDist=301
+edge_sweep,E10000,1000,10000,Kruskal,undirected connected,754.73,6548,3881,103194,7762,3881,7308,0,0,0,components=1;edges=999
+edge_sweep,E10000,1000,10000,Prim,undirected connected,807.32,6548,20000,115845,0,0,0,10000,3782,0,components=1;edges=999
+edge_sweep,E10000,1000,10000,TopoSort (Kahn),DAG,40.27,,20000,0,0,0,0,0,1000,0,isDag=true;validOrder=true;ordered=1000
+edge_sweep,E10000,1000,10000,TopoSort (Kahn),directed cyclic,8.34,,10000,0,0,0,0,0,0,0,isDag=false;ordered=0;unordered=1000
+edge_sweep,E10000,1000,10000,SCC (Tarjan),directed cyclic,130.57,,10000,0,0,0,0,0,1000,0,sccs=1;largest=1000
+edge_sweep,E10000,1000,10000,SCC (Tarjan),DAG,87.36,,10000,0,0,0,0,0,1000,0,sccs=1000;largest=1
+edge_sweep,E10000,1000,10000,Dijkstra,undirected connected,419.54,,20000,49565,0,0,0,2563,2563,2562,reachable=1000/1000;maxDist=68
+edge_sweep,E10000,1000,10000,Dijkstra,directed random,267.45,,10000,35799,0,0,0,1952,1952,1951,reachable=1000/1000;maxDist=125
+edge_sweep,E20000,1000,20000,Kruskal,undirected connected,1463.90,3540,3083,209255,6166,3083,5673,0,0,0,components=1;edges=999
+edge_sweep,E20000,1000,20000,Prim,undirected connected,1044.68,3540,40000,126717,0,0,0,20000,2982,0,components=1;edges=999
+edge_sweep,E20000,1000,20000,TopoSort (Kahn),DAG,79.07,,40000,0,0,0,0,0,1000,0,isDag=true;validOrder=true;ordered=1000
+edge_sweep,E20000,1000,20000,TopoSort (Kahn),directed cyclic,15.23,,20000,0,0,0,0,0,0,0,isDag=false;ordered=0;unordered=1000
+edge_sweep,E20000,1000,20000,SCC (Tarjan),directed cyclic,191.61,,20000,0,0,0,0,0,1000,0,sccs=1;largest=1000
+edge_sweep,E20000,1000,20000,SCC (Tarjan),DAG,147.40,,20000,0,0,0,0,0,1000,0,sccs=1000;largest=1
+edge_sweep,E20000,1000,20000,Dijkstra,undirected connected,617.61,,40000,63965,0,0,0,3129,3129,3128,reachable=1000/1000;maxDist=36
+edge_sweep,E20000,1000,20000,Dijkstra,directed random,415.33,,20000,48570,0,0,0,2511,2511,2510,reachable=1000/1000;maxDist=89
+edge_sweep,E50000,1000,50000,Kruskal,undirected connected,4073.28,1765,3621,527214,7242,3621,6737,0,0,0,components=1;edges=999
+edge_sweep,E50000,1000,50000,Prim,undirected connected,2212.53,1765,100000,225999,0,0,0,50000,3756,0,components=1;edges=999
+edge_sweep,E50000,1000,50000,TopoSort (Kahn),DAG,184.69,,100000,0,0,0,0,0,1000,0,isDag=true;validOrder=true;ordered=1000
+edge_sweep,E50000,1000,50000,TopoSort (Kahn),directed cyclic,54.70,,50000,0,0,0,0,0,0,0,isDag=false;ordered=0;unordered=1000
+edge_sweep,E50000,1000,50000,SCC (Tarjan),directed cyclic,358.23,,50000,0,0,0,0,0,1000,0,sccs=1;largest=1000
+edge_sweep,E50000,1000,50000,SCC (Tarjan),DAG,358.23,,50000,0,0,0,0,0,1000,0,sccs=1000;largest=1
+edge_sweep,E50000,1000,50000,Dijkstra,undirected connected,1104.14,,100000,79489,0,0,0,3785,3785,3784,reachable=1000/1000;maxDist=17
+edge_sweep,E50000,1000,50000,Dijkstra,directed random,683.06,,50000,67385,0,0,0,3291,3291,3290,reachable=1000/1000;maxDist=29
+edge_sweep,E100000,1000,100000,Kruskal,undirected connected,7964.37,1186,4049,1060623,8098,4049,7575,0,0,0,components=1;edges=999
+edge_sweep,E100000,1000,100000,Prim,undirected connected,4522.59,1186,200000,363300,0,0,0,100000,4375,0,components=1;edges=999
+edge_sweep,E100000,1000,100000,TopoSort (Kahn),DAG,570.74,,200000,0,0,0,0,0,1000,0,isDag=true;validOrder=true;ordered=1000
+edge_sweep,E100000,1000,100000,TopoSort (Kahn),directed cyclic,100.64,,100000,0,0,0,0,0,0,0,isDag=false;ordered=0;unordered=1000
+edge_sweep,E100000,1000,100000,SCC (Tarjan),directed cyclic,1067.23,,100000,0,0,0,0,0,1000,0,sccs=1;largest=1000
+edge_sweep,E100000,1000,100000,SCC (Tarjan),DAG,909.80,,100000,0,0,0,0,0,1000,0,sccs=1000;largest=1
+edge_sweep,E100000,1000,100000,Dijkstra,undirected connected,2024.28,,200000,88551,0,0,0,4184,4184,4183,reachable=1000/1000;maxDist=10
+edge_sweep,E100000,1000,100000,Dijkstra,directed random,1326.17,,100000,78988,0,0,0,3770,3770,3769,reachable=1000/1000;maxDist=20
+dsu_ablation,Small,10,30,Kruskal + DSU,no optimisation,0.39,102,13,112,26,13,22,0,0,0,
+dsu_ablation,Small,10,30,Kruskal + DSU,path compression only,0.39,102,13,112,26,13,17,0,0,0,
+dsu_ablation,Small,10,30,Kruskal + DSU,union by rank only,0.40,102,13,112,26,13,14,0,0,0,
+dsu_ablation,Small,10,30,Kruskal + DSU,path compression + union by rank,0.40,102,13,112,26,13,14,0,0,0,
+dsu_ablation,Medium,100,500,Kruskal + DSU,no optimisation,20.11,1210,305,3841,610,305,5270,0,0,0,
+dsu_ablation,Medium,100,500,Kruskal + DSU,path compression only,13.55,1210,305,3841,610,305,840,0,0,0,
+dsu_ablation,Medium,100,500,Kruskal + DSU,union by rank only,12.99,1210,305,3841,610,305,887,0,0,0,
+dsu_ablation,Medium,100,500,Kruskal + DSU,path compression + union by rank,13.09,1210,305,3841,610,305,557,0,0,0,
+dsu_ablation,Large,1000,5000,Kruskal + DSU,no optimisation,1048.93,12120,2868,50421,5736,2868,417495,0,0,0,
+dsu_ablation,Large,1000,5000,Kruskal + DSU,path compression only,394.03,12120,2868,50421,5736,2868,10721,0,0,0,
+dsu_ablation,Large,1000,5000,Kruskal + DSU,union by rank only,393.54,12120,2868,50421,5736,2868,8846,0,0,0,
+dsu_ablation,Large,1000,5000,Kruskal + DSU,path compression + union by rank,405.69,12120,2868,50421,5736,2868,5240,0,0,0,
+dsu_ablation,XL,10000,50000,Kruskal + DSU,no optimisation,124544.28,124784,43791,527775,87582,43791,74609999,0,0,0,
+dsu_ablation,XL,10000,50000,Kruskal + DSU,path compression only,5413.73,124784,43791,527775,87582,43791,186955,0,0,0,
+dsu_ablation,XL,10000,50000,Kruskal + DSU,union by rank only,5600.71,124784,43791,527775,87582,43791,160684,0,0,0,
+dsu_ablation,XL,10000,50000,Kruskal + DSU,path compression + union by rank,4804.46,124784,43791,527775,87582,43791,82789,0,0,0,
+dsu_chain,chain n=10000,10000,9999,DSU,no optimisation,65642.19,,0,0,29998,9999,49995000,0,0,0,
+dsu_chain,chain n=10000,10000,9999,DSU,path compression only,62.91,,0,0,29998,9999,19997,0,0,0,
+dsu_chain,chain n=10000,10000,9999,DSU,union by rank only,71.44,,0,0,29998,9999,19997,0,0,0,
+dsu_chain,chain n=10000,10000,9999,DSU,path compression + union by rank,52.45,,0,0,29998,9999,19997,0,0,0,

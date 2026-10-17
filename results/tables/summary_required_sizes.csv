@@ -1,0 +1,9 @@
+Algorithm / graph,Small (V=10, E=30),Medium (V=100, E=500),Large (V=1000, E=5000)
+Kruskal / undirected connected,0.38,12.85,363.05
+Prim / undirected connected,0.63,16.98,476.40
+TopoSort (Kahn) / DAG,0.16,1.84,24.60
+TopoSort (Kahn) / directed cyclic,0.03,0.41,4.47
+SCC (Tarjan) / directed cyclic,0.38,5.66,93.31
+SCC (Tarjan) / DAG,0.40,4.77,57.31
+Dijkstra / undirected connected,0.42,9.40,271.51
+Dijkstra / directed random,0.22,5.39,157.66
