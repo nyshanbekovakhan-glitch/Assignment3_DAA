@@ -1,0 +1,6 @@
+| Scenario | DSU variant | Avg time (us) | find calls | union calls | parent steps |
+|---|---|---|---|---|---|
+| chain n=10000 | no optimisation | 73950.47 | 29998 | 9999 | 49995000 |
+| chain n=10000 | path compression only | 62.26 | 29998 | 9999 | 19997 |
+| chain n=10000 | union by rank only | 35.59 | 29998 | 9999 | 19997 |
+| chain n=10000 | path compression + union by rank | 40.52 | 29998 | 9999 | 19997 |

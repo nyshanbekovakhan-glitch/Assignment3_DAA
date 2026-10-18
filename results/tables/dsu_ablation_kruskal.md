@@ -1,0 +1,18 @@
+| Graph | V | E | DSU variant | MST weight | Avg time (us) | DSU find calls | DSU union calls | DSU parent steps |
+|---|---|---|---|---|---|---|---|---|
+| Small | 10 | 30 | no optimisation | 102 | 0.29 | 26 | 13 | 22 |
+| Small | 10 | 30 | path compression only | 102 | 0.31 | 26 | 13 | 17 |
+| Small | 10 | 30 | union by rank only | 102 | 0.30 | 26 | 13 | 14 |
+| Small | 10 | 30 | path compression + union by rank | 102 | 0.30 | 26 | 13 | 14 |
+| Medium | 100 | 500 | no optimisation | 1210 | 12.59 | 610 | 305 | 5270 |
+| Medium | 100 | 500 | path compression only | 1210 | 9.74 | 610 | 305 | 840 |
+| Medium | 100 | 500 | union by rank only | 1210 | 9.37 | 610 | 305 | 887 |
+| Medium | 100 | 500 | path compression + union by rank | 1210 | 9.86 | 610 | 305 | 557 |
+| Large | 1000 | 5000 | no optimisation | 12120 | 797.79 | 5736 | 2868 | 417495 |
+| Large | 1000 | 5000 | path compression only | 12120 | 131.34 | 5736 | 2868 | 10721 |
+| Large | 1000 | 5000 | union by rank only | 12120 | 121.17 | 5736 | 2868 | 8846 |
+| Large | 1000 | 5000 | path compression + union by rank | 12120 | 118.13 | 5736 | 2868 | 5240 |
+| XL | 10000 | 50000 | no optimisation | 124784 | 119017.08 | 87582 | 43791 | 74609999 |
+| XL | 10000 | 50000 | path compression only | 124784 | 3453.87 | 87582 | 43791 | 186955 |
+| XL | 10000 | 50000 | union by rank only | 124784 | 3604.28 | 87582 | 43791 | 160684 |
+| XL | 10000 | 50000 | path compression + union by rank | 124784 | 2972.77 | 87582 | 43791 | 82789 |
