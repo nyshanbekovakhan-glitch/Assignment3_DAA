@@ -1,8 +1,0 @@
-| Graph | V | E | Algorithm | MST weight | Avg time (us) | Edge exams | Comparisons | DSU find calls | DSU union calls | DSU parent steps | PQ pushes | PQ pops |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Small | 10 | 30 | Kruskal | 102 | 0.38 | 13 | 112 | 26 | 13 | 14 | - | - |
-| Small | 10 | 30 | Prim | 102 | 0.63 | 60 | 130 | - | - | - | 30 | 13 |
-| Medium | 100 | 500 | Kruskal | 1210 | 12.85 | 305 | 3841 | 610 | 305 | 557 | - | - |
-| Medium | 100 | 500 | Prim | 1210 | 16.98 | 1000 | 5734 | - | - | - | 500 | 305 |
-| Large | 1000 | 5000 | Kruskal | 12120 | 363.05 | 2868 | 50421 | 5736 | 2868 | 5240 | - | - |
-| Large | 1000 | 5000 | Prim | 12120 | 476.40 | 10000 | 75048 | - | - | - | 5000 | 2886 |
