@@ -50,9 +50,6 @@ def time_plot(exp, xkey, xlabel, title, fname, loglog=True):
 time_plot("required", "V", "number of vertices V", "Execution time vs number of vertices (Small, Medium, Large)", "time_vs_vertices.png")
 time_plot("required", "E", "number of edges E", "Execution time vs number of edges (Small, Medium, Large)", "time_vs_edges.png")
 
-time_plot("vertex_sweep", "V", "number of vertices V (E = 5V)", "Scaling with V (sparse graphs, E = 5V)", "sweep_vertices.png")
-time_plot("edge_sweep", "E", "number of edges E (V = 1000 fixed)", "Scaling with E (V = 1000 fixed)", "sweep_edges.png")
-
 req = sel("required")
 names = ["Small", "Medium", "Large"]
 fig, axes = plt.subplots(1, 3, figsize=(14, 4.4))
@@ -81,21 +78,4 @@ axes[0].legend(fontsize=8)
 fig.suptitle("Effect of path compression and union by rank inside Kruskal (log scale)")
 fig.tight_layout(); fig.savefig(plots / "dsu_ablation.png", dpi=150); plt.close(fig)
 
-sc = [r for r in sel("vertex_sweep") if r["algorithm"].startswith("SCC") and r["graph_type"] == "directed cyclic"]
-xs = [int(r["V"]) for r in sc]; ys = [float(r["avg_time_us"]) for r in sc]
-fig, axes = plt.subplots(1, 2, figsize=(12, 4.4))
-axes[0].plot(xs, ys, "D-", color="tab:red"); axes[0].set_xscale("log"); axes[0].set_yscale("log")
-axes[0].set_xlabel("V (E = 5V)"); axes[0].set_ylabel("average time (us)"); axes[0].set_title("Tarjan SCC runtime vs graph size"); axes[0].grid(True, which="both", alpha=0.3)
-axes[1].plot(xs, [y / (int(r["V"]) + int(r["E"])) for y, r in zip(ys, sc)], "o-", color="tab:red")
-axes[1].set_xscale("log"); axes[1].set_xlabel("V (E = 5V)"); axes[1].set_ylabel("time per (V+E) (us)")
-axes[1].set_title("Normalised by V+E: should be ~constant if O(V+E)"); axes[1].grid(True, which="both", alpha=0.3)
-fig.tight_layout(); fig.savefig(plots / "scc_scaling.png", dpi=150); plt.close(fig)
-
-dj = [r for r in sel("vertex_sweep") if r["algorithm"] == "Dijkstra" and r["graph_type"] == "undirected connected"]
-fig, ax = plt.subplots(figsize=(7.5, 4.8))
-for key, lab, m in [("edge_exams", "edge examinations", "o"), ("comparisons", "heap comparisons", "s"), ("relaxations", "successful relaxations", "^"), ("pq_pops_or_visits", "heap pops", "v")]:
-    ax.plot([int(r["V"]) for r in dj], [float(r[key]) for r in dj], marker=m, label=lab)
-ax.set_xscale("log"); ax.set_yscale("log"); ax.set_xlabel("V (E = 5V)"); ax.set_ylabel("operation count")
-ax.set_title("Dijkstra operation counts (undirected connected graphs)"); ax.grid(True, which="both", alpha=0.3); ax.legend()
-fig.tight_layout(); fig.savefig(plots / "dijkstra_operations.png", dpi=150); plt.close(fig)
 print("plots written to", plots)
