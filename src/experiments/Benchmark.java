@@ -207,7 +207,6 @@ public final class Benchmark {
 
     static void save(Table t, Path dir, String name) throws IOException {
         t.writeCsv(dir.resolve(name + ".csv"));
-        t.writeMarkdown(dir.resolve(name + ".md"));
     }
 
     static List<Row> only(List<Row> rows, String exp) {
