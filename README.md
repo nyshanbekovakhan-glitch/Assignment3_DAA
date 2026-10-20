@@ -86,9 +86,8 @@ On DAGs, all vertices are ordered (valid order) and every vertex is its own SCC.
 ![Time vs edges](results/plots/time_vs_edges.png)
 ![Kruskal vs Prim](results/plots/kruskal_vs_prim.png)
 ![DSU](results/plots/dsu_ablation.png)
-![SCC scaling](results/plots/scc_scaling.png)
 
-More plots: `sweep_vertices.png`, `sweep_edges.png`, `dijkstra_operations.png`. In the three required graphs V and E grow together, so the first two plots look alike; the sweeps separate them.
+In the three required graphs V and E grow together, so the first two plots look alike. The runs with growing V and with growing E alone are in `results/tables/sweep_vertices.csv` and `sweep_edges.csv`; the SCC growth is in `scc_scaling.csv`.
 
 ## 6. Comparison and Discussion
 - **Kruskal vs Prim.** Both always give the same weight. On sparse graphs Kruskal was faster (1.3–1.6×). With V = 1000 fixed and E ≥ 20,000 Prim was faster; at E = 100,000 Prim took 4.5 ms and Kruskal 8.0 ms. Reason: Kruskal sorts all E edges (about 1.06 million comparisons), Prim does only about 4,400 pops (363 thousand comparisons) because the tree is complete long before the heap is empty.
